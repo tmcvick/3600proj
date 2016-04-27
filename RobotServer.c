@@ -110,6 +110,8 @@ int main(int argc, char *argv[]) {
 		// ~~~ Determine how many segments to send
         unsigned int segments = ceil(returnMessageSize * 1.0 / (MESSAGESIZE - 12));
         unsigned int remainder = returnMessageSize % (MESSAGESIZE - 12);
+	if(segments < 1)
+	  segments = 1;
 
 		// ~~~ Send each individual segment to the client over UDP
         int i;

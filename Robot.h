@@ -20,4 +20,4 @@
 #include <netdb.h>      /* for getHostByName() */
 #include <stdlib.h>     /* for atoi() and exit() */
 #include <unistd.h>     /* for close() */
-
+#include <zlib.h>
